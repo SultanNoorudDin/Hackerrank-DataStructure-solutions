@@ -1,0 +1,14 @@
+// function code :
+
+vector<int> reverseArray(vector<int> a) {
+    int i,j = a.size()-1,temp;
+    for ( i = 0; i < j; i++, j--)  
+    {  
+        temp = a[i];  
+        a[i] = a[j];  
+        a[j] = temp;  
+    }
+    return a;
+}
+
+// problem link : https://www.hackerrank.com/challenges/arrays-ds/problem
